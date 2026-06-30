@@ -1,1 +1,93 @@
-g
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KiraKris | Сайт-визитка</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121214;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: #1a1a1e;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            border: 1px solid #2a2a30;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #bb86fc;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #a5a5a5;
+            line-height: 1.5;
+            margin-bottom: 25px;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .btn {
+            display: block;
+            padding: 12px;
+            color: #ffffff;
+            background-color: #252529;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+            border: 1px solid #333339;
+        }
+
+        .btn:hover {
+            background-color: #bb86fc;
+            color: #121214;
+            transform: translateY(-2px);
+        }
+
+        /* Цвета для конкретных кнопок при наведении (опционально) */
+        .btn-steam:hover { background-color: #171a21; color: #fff; }
+        .btn-github:hover { background-color: #24292e; color: #fff; }
+        .btn-youtube:hover { background-color: #ff0000; color: #fff; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>KiraKris</h1>
+        <p>Привет, я Кира! Люблю играть в разные игры, а также пишу сайты, программы и другое.</p>
+        
+        <div class="links">
+            <a href="https://steamcommunity.com/id/KIRAKRISUWU/" target="_blank" class="btn btn-steam">Steam</a>
+            <a href="https://github.com/km2911TEST/" target="_blank" class="btn btn-github">GitHub</a>
+            <a href="https://www.youtube.com/@SWTGq1" target="_blank" class="btn btn-youtube">YouTube</a>
+        </div>
+    </div>
+
+</body>
+</html>
