@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OS Status info</title>
+    <style>
+        /* Сброс внешних отступов и установка темного фона для красоты */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #111;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow: hidden;
+        }
+
+        /* Стили для текста по центру */
+        .rgb-text {
+            font-size: 3rem;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            
+            /* Включаем анимацию смены цветов */
+            animation: rgb-shift 6s infinite linear;
+        }
+
+        /* Настройка плавной смены цветов (RGB) */
+        @keyframes rgb-shift {
+            0% { color: rgb(255, 0, 0); }       /* Красный */
+            17% { color: rgb(255, 255, 0); }   /* Желтый */
+            33% { color: rgb(0, 255, 0); }     /* Зеленый */
+            50% { color: rgb(0, 255, 255); }   /* Голубой */
+            66% { color: rgb(0, 0, 255); }     /* Синий */
+            83% { color: rgb(255, 0, 255); }   /* Фиолетовый */
+            100% { color: rgb(255, 0, 0); }    /* Возврат к красному */
+        }
+
+        /* Адаптивность для мобильных экранов */
+        @media (max-width: 768px) {
+            .rgb-text {
+                font-size: 1.8rem;
+                padding: 0 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="rgb-text">
+        Данная OS временно не добавлена
+    </div>
+
+</body>
+</html>
